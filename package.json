@@ -1,0 +1,29 @@
+{
+  "name": "ez_flashcards",
+  "version": "0.0.1",
+  "description": "Simple frontend agnostic API for delivery of arithmatic flashcards and history of performance. To be consumed by web application and iOS native application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvanstry/ez_flashcards.git"
+  },
+  "author": "Jerry VanStrydonck <jvanstry@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvanstry/ez_flashcards/issues"
+  },
+  "homepage": "https://github.com/jvanstry/ez_flashcards#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "csvtojson": "^1.1.5",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/home.js"></script>
+  </head>
+  <body>
+    <div id="banner">
+        <h1>Learn Math. Have Fun.</h1>
+    </div>
+
+    <div id="container">
+        <div id="tabs">
+            <span id="cards-option" data-panel="cards" class="active tab">Practice Math</span>
+            <span id="progress-option" data-panel="progress" class="inactive tab">Track Progress</span>
+        </div>
+        <div id="cards-panel" class="active panel">
+            <div class="operand tile">
+                <img id="op1" src="images/8.png"  />
+            </div>
+            <div id="operation" class="sign tile">
+                <img src="images/plus.png" />
+            </div>
+            <div class="operand tile">
+                <img id="op2" src="images/8.png" />
+            </div>
+            <div class="sign tile">
+                <img id="equals" src="images/equals.png"/>
+            </div>
+            <div id="answer-container">
+                <input id="answer" type="number">
+            </div>
+            <div id="buttons-container">
+                <button id="check-button" type="button">Check Answer</button>
+                <button id="clear-button" type="button">Clear</button>
+            </div>
+        </div>
+        <div id="progress-panel" class="panel">
+        </div>
+    </div>
+    <div id="grading-modal">
+        <div>
+            <h2 class="wrong msg">Not Quite...</h2>
+            <h2 class="right msg">Good Job!</h2>
+            <span id="grading-op1">8</span>
+            <span id="grading-sign">+</span>
+            <span id="grading-op2">8</span>
+            <span id="grading-equals">=</span>
+            <span id="grading-wrong" class="wrong">14</span>
+            <span id="grading-right">16</span>
+        </div>
+        <button id="next-question" type="button">Ok, Next Question</button>
+    </div>
+  </body>
+</html>
